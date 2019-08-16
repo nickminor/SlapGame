@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SlapGame</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>SlapGame</h3>
+                <img src="http://upload.wikimedia.org/wikipedia/commons/a/af/Villainc.svg" width="200" />
+                <p id="Health">Health: 100 </p>
+                <button onclick="slap()">Slap</button>
+                <button onclick="punch()">Punch</button>
+                <button onclick="kick()">Kick</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button onclick="restore()">Restore Health</button>
+                <button onclick="snacks()">Snacks</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button onclick="addItem('speed')">Speed</button>
+                <button onclick="addItem('strength')">Strength</button>
+                <button onclick="addItem('special')">Special</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
