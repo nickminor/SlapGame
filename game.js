@@ -24,20 +24,23 @@ let items = {
 }
 
 function addMods() {
-    var i;
-    for (i = 0; user.items[0] = "speed"; i + 1) {
-        return i
-    }
+    let out = 0;
+    for (let i = 0; i < user.items.length; i++) {
+        out += user.items[i].modifier;
+        //iterate over user items using the index
+        //access the property containing the number you want
+        //add that number to your 'out' variable
+    } return out;
 }
 function addItem(item) {
     if (item == 'speed') {
         user.items.push(items.speed)
     }
     if (item == 'strength') {
-        user.items.push(strength)
+        user.items.push(items.strength)
     }
     if (item == 'special') {
-        user.items.push(special)
+        user.items.push(items.special)
     }
 }
 
@@ -54,13 +57,13 @@ function snacks() {
 }
 
 function punch() {
-    user.health -= 5
+    user.health -= 5 + addMods();
     console.log("health", user.health)
     healthElement.textContent = "Health: " + user.health.toString()
 }
 
 function kick() {
-    user.health -= 10
+    user.health -= 10 + addMods();
     console.log("health", user.health)
     healthElement.textContent = "Health: " + user.health.toString()
 }
