@@ -2,6 +2,7 @@ let user = {
     health: 100,
     items: []
 }
+
 let healthElement = document.querySelector("#Health")
 
 let items = {
@@ -22,6 +23,12 @@ let items = {
     }
 }
 
+function addMods() {
+    var i;
+    for (i = 0; user.items[0] = "speed"; i + 1) {
+        return i
+    }
+}
 function addItem(item) {
     if (item == 'speed') {
         user.items.push(items.speed)
@@ -33,7 +40,9 @@ function addItem(item) {
         user.items.push(special)
     }
 }
+
 function slap() {
+    user.health -= 1 + addMods();
     console.log("health", user.health)
     healthElement.textContent = "Health: " + user.health.toString()
 }
